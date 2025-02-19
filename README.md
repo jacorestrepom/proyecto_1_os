@@ -10,24 +10,31 @@ Este programa en C++ para Linux permite encriptar y desencriptar archivos utiliz
 ## Instalación y Uso
 ### 1. Compilar el programa
 Ejecuta el siguiente comando en la terminal para compilar el programa:
+
 ```g++ -o xor_encryptor xor_encryptor.cpp```
 
 ### 2. Opciones de ejecución
 El programa acepta las siguientes opciones:
+
 ```./xor_encryptor [OPCION] [ARCHIVO]```
 
 -h o --help	Muestra la ayuda del programa.
+
 -v o --version	Muestra la versión del programa.
+
 -e [archivo] o --encrypt [archivo]	Encripta el archivo especificado.
+
 -d [archivo] o --decrypt [archivo]	Desencripta el archivo especificado.
 
 ## Ejemplo de uso
 Para encriptar un archivo de texto llamado prueba.txt
+
 ```./xor -e prueba.txt```
 
 El archivo encriptado se generará como prueba.txt.enc
 
 Para desencriptarlo:
+
 ```./xor -d prueba.txt.enc```
 
 El archivo desencriptado se guardará como prueba.txt.enc.dec
@@ -52,12 +59,15 @@ Para ejecutar el programa desde cualquier ubicación, muévelo a /usr/local/bin/
 ```sudo mv proyecto_1_os /usr/local/bin/```
 
 Asegura que tenga permisos de ejecución:
+
 ```sudo chmod +x /usr/local/bin/proyecto_1_os```
 
 ## 5. Ejecutar el Programa desde Cualquier Lugar
 Ahora puedes ejecutarlo desde cualquier directorio en la terminal:
+
 ```xor_encryptor -e prueba.txt```
 
 Si el comando no se reconoce, recarga el PATH:
+
 ```source ~/.bashrc```
 
